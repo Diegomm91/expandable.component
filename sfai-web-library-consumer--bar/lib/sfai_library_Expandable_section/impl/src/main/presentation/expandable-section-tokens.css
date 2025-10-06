@@ -1,0 +1,45 @@
+:root {
+    --expandable-section-transition-speed: 0.3s;
+    --expandable-section-transition-timing-function: ease-in-out;
+    /* Simple - Plain - Text only */
+    --expandable-section-simple-plain-text-only-off-color-text: #333;
+    --expandable-section-simple-plain-text-only-expanded-color-text: #333;
+
+    /* Simple - Plain - Text + icon */
+    --expandable-section-simple-plain-text-icon-off-color-text: #333;
+    --expandable-section-simple-plain-text-icon-off-color-icon: #333;
+    --expandable-section-simple-plain-text-icon-off-icon-rotation: 0deg;
+    --expandable-section-simple-plain-text-icon-expanded-color-text: #333;
+    --expandable-section-simple-plain-text-icon-expanded-color-icon: #333;
+    --expandable-section-simple-plain-text-icon-expanded-icon-rotation: 180deg;
+
+    /* Simple - Plain - Icon only */
+    --expandable-section-simple-plain-icon-only-off-color-icon: #333;
+    --expandable-section-simple-plain-icon-only-off-icon-rotation: 0deg;
+    --expandable-section-simple-plain-icon-only-expanded-color-icon: #333;
+    --expandable-section-simple-plain-icon-only-expanded-icon-rotation: 180deg;
+
+    /* Simple - Link - Text only */
+    --expandable-section-simple-link-text-only-off-color-text: #007bff;
+    --expandable-section-simple-link-text-only-expanded-color-text: #007bff;
+
+    /* Simple - Link - Text + icon */
+    --expandable-section-simple-link-text-icon-off-color-text: #007bff;
+    --expandable-section-simple-link-text-icon-off-color-icon: #007bff;
+    --expandable-section-simple-link-text-icon-off-icon-rotation: 0deg;
+    --expandable-section-simple-link-text-icon-expanded-color-text: #007bff;
+    --expandable-section-simple-link-text-icon-expanded-color-icon: #007bff;
+    --expandable-section-simple-link-text-icon-expanded-icon-rotation: 180deg;
+
+    /* Simple - Link - Icon only */
+    --expandable-section-simple-link-icon-only-off-color-icon: #007bff;
+    --expandable-section-simple-link-icon-only-off-icon-rotation: 0deg;
+    --expandable-section-simple-link-icon-only-expanded-color-icon: #007bff;
+    --expandable-section-simple-link-icon-only-expanded-icon-rotation: 180deg;
+
+    /* Highlighted - Color - Icon only */
+    --expandable-section-highlighted-color-icon-only-off-color-icon: #f00;
+    --expandable-section-highlighted-color-icon-only-off-icon-rotation: 0deg;
+    --expandable-section-highlighted-color-icon-only-expanded-color-icon: #f00;
+    --expandable-section-highlighted-color-icon-only-expanded-icon-rotation: 180deg;
+}

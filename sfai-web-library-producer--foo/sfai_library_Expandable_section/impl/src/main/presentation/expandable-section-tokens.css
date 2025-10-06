@@ -1,0 +1,73 @@
+:root {
+  /* Colors */
+  --color-neutral-dark: #333;
+  --color-primary: #007bff;
+  --color-highlight: #f00;
+
+  /* Transitions */
+  --transition-speed-fast: 0.3s;
+  --transition-timing-ease: ease-in-out;
+
+  /* Expandable Component - General */
+  --expandable-color-text: var(--color-neutral-dark);
+  --expandable-color-link: var(--color-primary);
+  --expandable-color-highlight: var(--color-highlight);
+  --expandable-transition-speed: var(--transition-speed-fast);
+  --expandable-transition-timing: var(--transition-timing-ease);
+  --expandable-icon-rotation-expanded: 180deg;
+  --expandable-icon-rotation-off: 0deg;
+}
+
+.expandable-section {
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.expandable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.expandable-title {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.expandable-simple .expandable-title {
+  color: var(--expandable-color-text);
+}
+
+.expandable-link .expandable-title {
+  color: var(--expandable-color-link);
+  text-decoration: underline;
+}
+
+.expandable-highlighted {
+  background-color: #fff3cd; /* Un color de fondo para destacar */
+  border-color: var(--expandable-color-highlight);
+}
+
+.expandable-icon {
+  transform: rotate(var(--expandable-icon-rotation-off));
+  transition: transform var(--expandable-transition-speed) var(--expandable-transition-timing);
+  font-size: 1.2em;
+}
+
+.expandable-icon.expanded {
+  transform: rotate(var(--expandable-icon-rotation-expanded));
+}
+
+.expandable-content {
+  padding-top: 10px;
+  border-top: 1px solid #eee;
+  margin-top: 10px;
+}
+
+.expandable-section__title--hidden {
+  display: none;
+}

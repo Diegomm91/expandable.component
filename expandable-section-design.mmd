@@ -1,0 +1,77 @@
+graph TD
+    A[Expandable Section Component] --> B{Estados};
+    B --> B1[Off (Colapsado)];
+    B --> B2[Expanded (Expandido)];
+
+    B1 --> C1[Tipos de Componente Off];
+    B2 --> C2[Tipos de Componente Expanded];
+
+    C1 --> D1[Simple Off];
+    C1 --> D2[Highlighted Off];
+
+    C2 --> E1[Simple Expanded];
+    C2 --> E2[Highlighted Expanded];
+
+    D1 --> D1A[Plain Off];
+    D1 --> D1B[Link Off];
+
+    E1 --> E1A[Plain Expanded];
+    E1 --> E1B[Link Expanded];
+
+    D2 --> D2A[Color Off];
+    E2 --> E2A[Color Expanded];
+
+    D1A --> D1A1[Text only Off];
+    D1A --> D1A2[Text + icon Off];
+    D1A --> D1A3[Icon only Off];
+
+    D1B --> D1B1[Text only Off];
+    D1B --> D1B2[Text + icon Off];
+    D1B --> D1B3[Icon only Off];
+
+    E1A --> E1A1[Text only Expanded];
+    E1A --> E1A2[Text + icon Expanded];
+    E1A --> E1A3[Icon only Expanded];
+
+    E1B --> E1B1[Text only Expanded];
+    E1B --> E1B2[Text + icon Expanded];
+    E1B --> E1B3[Icon only Expanded];
+
+    D2A --> D2A1[Icon only Off];
+    E2A --> E2A1[Icon only Expanded];
+
+    %% Tokens para estado Off
+    D1A1 --> T1[--expandable-section-simple-plain-text-only-off-color-text: #333];
+    D1A2 --> T2[--expandable-section-simple-plain-text-icon-off-color-text: #333];
+    D1A2 --> T3[--expandable-section-simple-plain-text-icon-off-color-icon: #333];
+    D1A2 --> T4[--expandable-section-simple-plain-text-icon-off-icon-rotation: 0deg];
+    D1A3 --> T5[--expandable-section-simple-plain-icon-only-off-color-icon: #333];
+    D1A3 --> T6[--expandable-section-simple-plain-icon-only-off-icon-rotation: 0deg];
+
+    D1B1 --> T7[--expandable-section-simple-link-text-only-off-color-text: #007bff];
+    D1B2 --> T8[--expandable-section-simple-link-text-icon-off-color-text: #007bff];
+    D1B2 --> T9[--expandable-section-simple-link-text-icon-off-color-icon: #007bff];
+    D1B2 --> T10[--expandable-section-simple-link-text-icon-off-icon-rotation: 0deg];
+    D1B3 --> T11[--expandable-section-simple-link-icon-only-off-color-icon: #007bff];
+    D1B3 --> T12[--expandable-section-simple-link-icon-only-off-icon-rotation: 0deg];
+
+    D2A1 --> T13[--expandable-section-highlighted-color-icon-only-off-color-icon: #f00];
+    D2A1 --> T14[--expandable-section-highlighted-color-icon-only-off-icon-rotation: 0deg];
+
+    %% Tokens para estado Expanded
+    E1A1 --> T15[--expandable-section-simple-plain-text-only-expanded-color-text: #333];
+    E1A2 --> T16[--expandable-section-simple-plain-text-icon-expanded-color-text: #333];
+    E1A2 --> T17[--expandable-section-simple-plain-text-icon-expanded-color-icon: #333];
+    E1A2 --> T18[--expandable-section-simple-plain-text-icon-expanded-icon-rotation: 180deg];
+    E1A3 --> T19[--expandable-section-simple-plain-icon-only-expanded-color-icon: #333];
+    E1A3 --> T20[--expandable-section-simple-plain-icon-only-expanded-icon-rotation: 180deg];
+
+    E1B1 --> T21[--expandable-section-simple-link-text-only-expanded-color-text: #007bff];
+    E1B2 --> T22[--expandable-section-simple-link-text-icon-expanded-color-text: #007bff];
+    E1B2 --> T23[--expandable-section-simple-link-text-icon-expanded-color-icon: #007bff];
+    E1B2 --> T24[--expandable-section-simple-link-text-icon-expanded-icon-rotation: 180deg];
+    E1B3 --> T25[--expandable-section-simple-link-icon-only-expanded-color-icon: #007bff];
+    E1B3 --> T26[--expandable-section-simple-link-icon-only-expanded-icon-rotation: 180deg];
+
+    E2A1 --> T27[--expandable-section-highlighted-color-icon-only-expanded-color-icon: #f00];
+    E2A1 --> T28[--expandable-section-highlighted-color-icon-only-expanded-icon-rotation: 180deg];
