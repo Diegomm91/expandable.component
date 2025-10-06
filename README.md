@@ -1,0 +1,2 @@
+# expandable.component
+componente expandible
